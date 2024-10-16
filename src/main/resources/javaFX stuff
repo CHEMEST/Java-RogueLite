@@ -1,0 +1,39 @@
+
+        Text text = new Text();
+        scoreText.setText("Score: 000");
+        scoreText.setFont(Font.font("Verdana", 30));
+        scoreText.setX(10);
+        scoreText.setY(scoreText.getFont().getSize() + 10);
+        scoreText.setFill(Color.LIME);
+
+        Line line = new Line();
+        line.setStartX(0);
+        line.setStartY(0);
+        line.setEndX(scene.getWidth());
+        line.setEndY(scene.getHeight());
+        line.setStrokeWidth(3);
+        line.setStroke(Color.DARKBLUE);
+        line.setOpacity(0.3);
+        line.setRotate(45);
+        nodes.add(line);
+
+        Rectangle rect = new Rectangle();
+        rect.setX(100);
+        rect.setY(100);
+        rect.setWidth(25);
+        rect.setHeight(50);
+        rect.setStrokeWidth(3);
+        rect.setStroke(Color.WHITESMOKE);
+
+        Polygon triangle = new Polygon();
+        triangle.getPoints().setAll(
+                200.0, 200.0,
+                300.0, 300.0,
+                200.0, 300.0
+        );
+        triangle.setFill(Color.DARKBLUE);
+
+//        nodes.add(triangle);
+
+//        ImageView img = new ImageView(new Image("fileName"));
+        // .setX(); .setY();
